@@ -3,10 +3,11 @@ import cv2
 import numpy as np
 import time
 
+st.set_page_config(page_title="Motion Detector", page_icon=":camera:")
 date = True
 day = True
 st.title("Motion Detector")
-st.set_page_config(page_title="Motion Detector", page_icon=":camera:")
+
 with st.expander("Start Camera"):
     streamlit_image = st.image([])
     camera = cv2.VideoCapture(0)
