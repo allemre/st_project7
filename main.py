@@ -6,6 +6,7 @@ import time
 date = True
 day = True
 st.title("Motion Detector")
+st.set_page_config(page_title="Motion Detector", page_icon=":camera:")
 with st.expander("Start Camera"):
     streamlit_image = st.image([])
     camera = cv2.VideoCapture(0)
